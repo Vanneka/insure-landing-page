@@ -1,0 +1,448 @@
+/*--------DOCUMENT STYLING STARTS HERE--------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: hsl(256, 26%, 20%);
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 9.5px;
+    padding: 8px 22px;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+    border-radius: 1px;
+    font-weight: 600;
+}
+
+.btn-light {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-dark {
+    border: 1px solid hsl(256, 26%, 20%);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-dark:hover {
+    cursor: pointer;
+    background-color: hsl(256, 26%, 20%);
+    color: #fff;
+}
+
+.btn-light:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: hsl(256, 26%, 20%);
+}
+
+/*--------DOCUMENT STYLING ENDS HERE--------*/
+
+/*--------NAVIGATION STYLING STARTS HERE--------*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+nav .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+/*--------NAVIGATION STYLING ENDS HERE--------*/
+
+/*--------HEADER STYLING STARTS HERE--------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+    background: url(images/bg-pattern-intro-left-desktop.svg) left bottom no-repeat,
+        url(images/bg-pattern-intro-right-desktop.svg) right top no-repeat;
+    background-size: 120px, 300px;
+    padding-top: 80px;
+    height: 100%;
+}
+
+header:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 75%;
+    background-color: hsl(270, 9%, 17%);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+header .header-info {
+    flex: 1;
+    order: 1;
+    padding: 0px 90px;
+}
+
+header .header-img {
+    flex: 1;
+    order: 2;
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header .header-info:before {
+    content: "";
+    display: block;
+    border-top: 1px solid hsla(0, 0%, 98%, 0.6);
+    width: 10%;
+    padding-bottom: 50px;
+}
+
+.header-title {
+    font-size: 36px;
+}
+
+.header-subtitle {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+/*--------HEADER STYLING ENDS HERE--------*/
+
+/*--------SERVICES STYLING STARTS HERE--------*/
+.company-desc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 60px 120px;
+}
+
+.company-desc-title {
+    font-size: 36px;
+}
+
+.company-desc-title:before {
+    content: "";
+    display: block;
+    border-top: 1px solid hsla(273, 4%, 51%, 0.4);
+    width: 10%;
+    padding-bottom: 50px;
+}
+
+.company-services {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.company-services i {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    background-color: hsl(216, 30%, 68%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.company-services .service {
+    padding: 40px;
+}
+
+.company-services .service-title {
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+}
+
+.company-services .service-desc {
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+}
+
+.company-more-info {
+    background: url(images/bg-pattern-intro-right-desktop.svg) right top no-repeat;
+    background-size: 300px;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    padding: 60px;
+}
+
+.company-more-info .title {
+    flex: 1;
+    color: #fff;
+    font-size: 24px;
+}
+
+.company-more-info .button {
+    /* background-color: green; */
+    align-self: center;
+    justify-content: flex-end;
+}
+
+/*--------SERVICES STYLING ENDS HERE--------*/
+
+/*--------FOOTER STYLING STARTS HERE--------*/
+footer {
+    padding: 60px 120px;
+    background: url(images/bg-pattern-intro-left-desktop.svg) left top no-repeat;
+    background-color: hsl(0, 0%, 98%);
+    background-size: 160px;
+}
+
+footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(273, 4%, 51%, 0.4);
+    padding-bottom: 30px;
+}
+
+footer .footer-info .icons {
+    justify-content: flex-end;
+}
+
+footer .footer-info .icons i {
+    padding: 0 6px;
+}
+
+footer .icons li {
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    color: hsl(0, 0%, 37%);
+}
+
+footer .icons li:hover {
+    transition: all ease 0.3s;
+    color: hsl(256, 26%, 20%);
+}
+
+footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding-top: 25px;
+}
+
+footer .menu-title {
+    color: hsl(0, 0%, 37%);
+    padding-bottom: 5px;
+}
+
+footer .footer-menu-item li {
+    padding-bottom: 10px;
+    color: hsl(0, 0%, 37%);
+    transition: all ease 0.3s;
+}
+
+footer .footer-menu-item li:hover {
+    transition: all ease 0.3s;
+    color: hsl(256, 26%, 20%);
+}
+
+/* MOBILE MENUBAR STYLING IN MAIN CSS */
+#close,
+#hamburger {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/*--------FOOTER STYLING ENDS HERE--------*/
+
+/*--------MEDIA QUERIES STARTS HERE--------*/
+@media screen and (max-width: 500px) {
+
+    /* HEADER STYLING STARTS HERE */
+    header {
+        display: block;
+        padding-top: 0px;
+    }
+
+    header .header-info {
+        background-color: hsl(270, 9%, 17%);
+        padding: 30px;
+        text-align: center;
+    }
+
+    .header-img {
+        margin-bottom: -4px;
+    }
+
+    header:before {
+        content: "";
+        display: none;
+    }
+
+    /* HEADER STYLING ENDS HERE */
+
+    /* COMPANY DESCRIPTION STYLING STARTS HERE */
+    .company-desc {
+        display: block;
+    }
+
+    .company-desc-title {
+        padding: 30px;
+    }
+
+    .company-services {
+        display: block;
+    }
+
+    .company-services .service {
+        padding: 20px;
+    }
+
+    .company-desc {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .company-services i {
+        margin: 0 auto;
+    }
+
+    .company-more-info {
+        display: block;
+    }
+
+    .more-info-title {
+        padding-bottom: 20px;
+    }
+
+    /* COMPANY DESCRIPTION STYLING ENDS HERE */
+
+    /* FOOTER STYLING STARTS HERE */
+    footer {
+        padding: 20px;
+    }
+
+    footer .footer-info {
+        display: block;
+        text-align: center;
+    }
+
+    footer .footer-info img {
+        padding: 20px 0;
+    }
+
+    footer .footer-menu {
+        display: block;
+        text-align: center;
+    }
+
+    /* FOOTER STYLING ENDS HERE */
+
+    /* MOBILE MENU STYLING STARTS HERE */
+    .nav-items,
+    .cta {
+        display: none;
+    }
+
+    #close,
+    #hamburger {
+        cursor: pointer;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(270, 9%, 17%);
+        text-transform: uppercase;
+        padding: 40px 30px 0 30px;
+        font-size: 14px;
+        transition: all ease 0.5s;
+        /* display: block; */
+    }
+    
+    .hide-me {
+        transform: translateX(376px);
+    }
+    
+    .mobile-nav-items a {
+        display: block;
+        padding: 25px 0;
+        color: white;
+    }
+
+    .mobile-cta button {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    /* MOBILE MENU STYLING ENDS HERE */
+
+}
+
+/*--------MEDIA QUERIES ENDS HERE--------*/
+/*
+STYLE GUIDE
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Violet: hsl(256, 26%, 20%)
+- Grayish Blue: hsl(216, 30%, 68%)
+
+### Neutral
+
+- Very Dark Violet: hsl(270, 9%, 17%)
+- Dark Grayish Violet: hsl(273, 4%, 51%)
+- Very Light Gray: hsl(0, 0%, 98%)
+*/
+/*--------DOCUMENT STYLING STARTS HERE--------*/
+/*--------DOCUMENT STYLING ENDS HERE--------*/

@@ -1,3 +1,5 @@
+# Insure page with dark theme and features grid
+
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
 

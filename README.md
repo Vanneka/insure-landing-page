@@ -3,6 +3,10 @@
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
 
+### LIVE DEMO
+https://vanneka.github.io/insure-landing-page/
+
+
 ## Hi There! 👋
 This is my entry for the Frontend Mentor challenge
 
@@ -18,8 +22,5 @@ The `style-guide.md` file, contains the information for the color palette and fo
 2. Right click and click on `inspect element`
 
 3. Change device size from the top of browser to test responsiveness
-
-### LIVE DEMO
-https://vanneka.github.io/insure-landing-page/
 
 **Yay!!!** 🚀
